@@ -1,0 +1,27 @@
+{
+  "name": "react-hue",
+  "version": "1.0.0",
+  "description": "React Hue api tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetm73/react-hue.git"
+  },
+  "keywords": [
+    "react",
+    "hue",
+    "tutorial"
+  ],
+  "author": "Mike van der Vet <mike@seventythree.cc> (http://www.seventythree.cc)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vetm73/react-hue/issues"
+  },
+  "homepage": "https://github.com/vetm73/react-hue#readme",
+  "dependencies": {
+    "react": "^15.3.2"
+  }
+}
