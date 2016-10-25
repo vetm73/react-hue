@@ -1,0 +1,171 @@
+{
+  "1": {
+    "state": {
+      "on": false,
+      "bri": 254,
+      "hue": 0,
+      "sat": 0,
+      "effect": "none",
+      "xy": [
+        0.4584,
+        0.41
+      ],
+      "alert": "none",
+      "colormode": "xy",
+      "reachable": false
+    },
+    "type": "Color light",
+    "name": "Iris",
+    "modelid": "LLC010",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:c2:4a:7e-0b",
+    "swversion": "5.5.1.9461"
+  },
+  "2": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "alert": "none",
+      "reachable": false
+    },
+    "type": "Dimmable light",
+    "name": "Lux Lamp bo",
+    "modelid": "LWB004",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:db:a7:18-0b",
+    "swversion": "5.17.1.12040"
+  },
+  "3": {
+    "state": {
+      "on": true,
+      "bri": 144,
+      "hue": 13393,
+      "sat": 204,
+      "effect": "none",
+      "xy": [
+        0.5052,
+        0.4151
+      ],
+      "ct": 450,
+      "alert": "select",
+      "colormode": "xy",
+      "reachable": true
+    },
+    "type": "Extended color light",
+    "name": "Hue Color raam Links",
+    "modelid": "LCT001",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:f5:bb:df-0b",
+    "swversion": "5.50.1.19085"
+  },
+  "4": {
+    "state": {
+      "on": true,
+      "bri": 144,
+      "hue": 13393,
+      "sat": 204,
+      "effect": "none",
+      "xy": [
+        0.5052,
+        0.4151
+      ],
+      "ct": 450,
+      "alert": "none",
+      "colormode": "xy",
+      "reachable": true
+    },
+    "type": "Extended color light",
+    "name": "Hue Color raam Rechts",
+    "modelid": "LCT001",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:d9:e8:33-0b",
+    "swversion": "5.50.1.19085"
+  },
+  "5": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "hue": 0,
+      "sat": 0,
+      "effect": "none",
+      "xy": [
+        0.4584,
+        0.41
+      ],
+      "alert": "none",
+      "colormode": "xy",
+      "reachable": false
+    },
+    "type": "Color light",
+    "name": "Bloom",
+    "modelid": "LLC011",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:c2:f2:f7-0b",
+    "swversion": "5.23.1.13452"
+  },
+  "6": {
+    "state": {
+      "on": false,
+      "bri": 0,
+      "alert": "none",
+      "reachable": false
+    },
+    "type": "Dimmable light",
+    "name": "Lux Lamp Bo & Luke",
+    "modelid": "LWB004",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:00:db:9e:75-0b",
+    "swversion": "5.17.1.12040"
+  },
+  "7": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "alert": "none",
+      "reachable": false
+    },
+    "type": "Dimmable light",
+    "name": "Hue white lamp rechts",
+    "modelid": "LWB006",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:10:5b:24:00-0b",
+    "swversion": "5.38.1.15095"
+  },
+  "8": {
+    "state": {
+      "on": true,
+      "bri": 254,
+      "alert": "none",
+      "reachable": false
+    },
+    "type": "Dimmable light",
+    "name": "Hue white lamp links",
+    "modelid": "LWB006",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:10:34:98:43-0b",
+    "swversion": "5.38.1.15095"
+  },
+  "9": {
+    "state": {
+      "on": true,
+      "bri": 144,
+      "hue": 13393,
+      "sat": 204,
+      "effect": "none",
+      "xy": [
+        0.5052,
+        0.4151
+      ],
+      "ct": 450,
+      "alert": "none",
+      "colormode": "xy",
+      "reachable": true
+    },
+    "type": "Extended color light",
+    "name": "Hue color lamp tv",
+    "modelid": "LCT007",
+    "manufacturername": "Philips",
+    "uniqueid": "00:17:88:01:10:55:02:2d-0b",
+    "swversion": "5.50.1.19085"
+  }
+}
