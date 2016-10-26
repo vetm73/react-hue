@@ -66,24 +66,6 @@ router.route('/lights/:light_id')
           config[light_id]['state']['on'] = req.body.on;
           res.json({ message: 'Light ' + light_id + ' updated!' });
       }
-
-      // // use our bear model to find the bear we want
-      // Bear.findById(req.params.bear_id, function(err, bear) {
-      //
-      //     if (err)
-      //         res.send(err);
-      //
-      //     bear.name = req.body.name;  // update the bears info
-      //
-      //     // save the bear
-      //     bear.save(function(err) {
-      //         if (err)
-      //             res.send(err);
-      //
-      //         res.json({ message: 'Bear updated!' });
-      //     });
-      //
-      // });
   });
 
 // REGISTER OUR ROUTES -------------------------------
