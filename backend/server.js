@@ -4,7 +4,8 @@
 // =============================================================================
 
 // call the packages we need
-var express    = require('express');        // call express
+// var express    = require('express');        // call express
+import express from 'express';
 var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
 var fs         = require('fs');
@@ -52,6 +53,11 @@ router.route('/lights/:light_id')
 
 // get the bear with that id (accessed at GET http://localhost:8080/api/bears/:bear_id)
   .get(function(req, res) {
+      var light_id = req.params.light_id;
+      if(!config[light_id]) {
+          res.json({error: 'Light ' + light_id + ' not found'});
+      }
+      res.json(config[light_id]);
   })
 
   // update the bear with this id (accessed at PUT http://localhost:8080/api/bears/:bear_id)
@@ -64,7 +70,8 @@ router.route('/lights/:light_id')
 
       if(req.body.on) {
           config[light_id]['state']['on'] = req.body.on;
-          res.json({ message: 'Light ' + light_id + ' updated!' });
+          // res.json({ message: 'Light ' + light_id + ' updated!' });
+          res.json(config[light_id]);
       }
   });
 

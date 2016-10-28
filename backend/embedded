@@ -1,0 +1,15 @@
+#!/bin/sh
+
+command=$1
+shift
+
+case ${command} in
+    npm)
+        ../node/npm "$@" ;;
+    gulp)
+        ../node/node "../node_modules/gulp/bin/gulp.js" "$@" ;;
+    node)
+        ../node/node "$@" ;;
+    *)
+        echo "Error: \"${COMMAND}\" not implemented"
+esac
