@@ -55,6 +55,10 @@ module.exports = {
                 test: /\.json(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'json',
                 include: /config/
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|png|jpg|pdf)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file?name=[path][name].[ext]&context=resources'
             }
         ]
     },

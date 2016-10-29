@@ -22,21 +22,21 @@ gulp.task('watch:js',
                 colors: true,
                 chunks: false
             },
-            // proxy: {
+            proxy: {
             //     // '/target/build/app.css': '',
-            //     '/api/*': {
-            //         target: 'http://localhost:8080',
-            //         rewrite: function(req) {
-            //             req.url = req.url.replace(/^\/api/, '');
-            //         }
-            //     },
+                '/api/*': {
+                    target: 'http://localhost:8080',
+                    // rewrite: function(req) {
+                    //     req.url = req.url.replace(/^\/api/, '');
+                    // }
+                },
             //     '/pdf/*': {
             //         target: 'http://www.seventythree.cc',
             //         rewrite: function(req) {
             //             req.url = req.url.replace(/^\/pdf/, '');
             //         }
             //     }
-            // }
+            }
         })
         server.listen(port, '0.0.0.0', (err) => {
             if (err) {
