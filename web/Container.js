@@ -1,11 +1,24 @@
-/**
-<<<<<<< HEAD
-<<<<<<< HEAD
- * Created by mike on 29/10/2016.
-=======
- * Created by mike on 28/10/2016.
->>>>>>> bc3a83f... server ES6
-=======
- * Created by mike on 28/10/2016.
->>>>>>> bc3a83f... server ES6
- */
+import React, { Component, PropTypes } from 'react'  
+import styles from './Container.css';
+import List from './components/List';
+import Lamps from './components/Lamps';
+
+
+export default class Container extends Component { 
+    static propTypes = {
+        lights: PropTypes.arrayOf(PropTypes.object).isRequired,
+        toggleLight: PropTypes.func.isRequired
+    }
+
+    render() {
+        const {lights} = this.props;
+        return <div className={styles.container}>
+            <div className={styles.leftPane}>
+                <List items={lights} onClick={this.props.toggleLight} />
+            </div>
+            <div className={styles.rightPane}>
+                <Lamps lights={lights} />
+            </div>
+        </div>
+    }  
+}
