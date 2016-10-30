@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.container:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.title {
+    flex-grow: 3;
+}
