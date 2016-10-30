@@ -26,7 +26,7 @@ var router = express.Router();              // get an instance of the express Ro
 // middleware to use for all requests
 router.use(function(req, res, next) {
     // do logging
-    console.log('Something is happening.');
+    console.log('Something is happening.',req.body);
     res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
@@ -72,7 +72,7 @@ router.route('/lights/:light_id')
       }
 
       if(req.body.on) {
-          config[light_id]['state']['on'] = req.body.on;
+          config[light_id]['state']['on'] = req.body.on === 'true' ? true : false;
           // res.json({ message: 'Light ' + light_id + ' updated!' });
           res.json(config[light_id]);
       }
