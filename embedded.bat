@@ -1,5 +1,6 @@
 @ECHO OFF
 set COMMAND=%1
+set PATH=%cd%\node;%PATH%
 
 if "%COMMAND%" == "npm" (
     node\npm %2 %3 %4 %5 %6 %7 %8 %9
